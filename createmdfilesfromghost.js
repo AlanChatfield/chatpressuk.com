@@ -17,7 +17,8 @@ const createMdFilesFromGhost = async () => {
     try {
         // Fetch  posts from the Ghost Content API
         const posts = await api.posts.browse({
-            limit: 'tag:[politics,opinion]',
+            limit: 'all',
+			filter: 'tag:[politics,opinion]',
             include: 'tags,authors',
             formats: ['html'],
         });
@@ -136,8 +137,8 @@ const createMdFilesFromGhost = async () => {
     try {
         // Fetch tags from the Ghost Content API
         const tags = await api.tags.browse({
-            limit: 'slug:[politics,opinion]',
-            filter: 'visibility:public'
+            limit: 'all',
+            filter: 'accent_color:#00578A'
         });
 
         await Promise.all(tags.map(async (tag) => {
@@ -157,7 +158,7 @@ const createMdFilesFromGhost = async () => {
 
             let accentColor = tag.accent_color || '';	
             if (accentColor == "#00578A") {
-                frontmatter.slug = "opinion/" + tag.slug;
+                frontmatter.slug = tag.slug;
             } else {		    
                 frontmatter.slug = tag.slug;		    
             }		    
