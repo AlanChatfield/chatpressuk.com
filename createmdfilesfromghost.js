@@ -18,7 +18,7 @@ const createMdFilesFromGhost = async () => {
         // Fetch  posts from the Ghost Content API
         const posts = await api.posts.browse({
             limit: 'all',
-			filter: 'tag:[politics,opinion]',
+            filter: 'tag:[politics,sport]',
             include: 'tags,authors',
             formats: ['html'],
         });
