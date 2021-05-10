@@ -1,0 +1,5 @@
+[context.production.environment]
+HUGO_ENV = "production"
+
+[build]
+    command = "npm run generate && hugo -b $URL/"

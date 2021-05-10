@@ -1,0 +1,14 @@
+<style>
+.blog-cover { background-image: url({{ replace .imageUrl "https://go.alanchatfield.net/content/images/" "https://alanchatfield.net/content/images/size/w2000/" }}) }	 
+@media (max-width: 1023px){ .blog-cover { background-image: url({{ replace .imageUrl "https://go.alanchatfield.net/content/images/" "https://alanchatfield.net/content/images/size/w1200/" }})} }
+@media (max-width: 767px){ .blog-cover { background-image: url({{ replace .imageUrl "https://go.alanchatfield.net/content/images/" "https://alanchatfield.net/content/images/size/w750/" }})} }
+@media (max-width: 480px){ .blog-cover { background-image: url({{ replace .imageUrl "https://go.alanchatfield.net/content/images/" "https://alanchatfield.net/content/images/size/w475/" }})} }	
+</style>
+<div class="blog-cover index-cover {{.bannerStyle}}">
+    <section>
+        <div class="container">
+            <h1 class="title">{{.title}}</h1>
+            <h3>{{.subtitle}}</h3>		
+        </div>
+    </section>			
+</div>

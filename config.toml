@@ -1,0 +1,17 @@
+baseurl = "https://www.chatpressuk.com/"
+languageCode = "en-gb"
+title = "ChatPress UK"
+description = "Random thoughts about sport, politics and global affairs"
+preserveTaxonomyNames = true
+disableKinds = ["taxonomyTerm"]
+[outputs]
+  page = ["HTML", "AMP"]
+[permalinks]
+  post = "/:slug/"
+  tags = "/tag/:slug/"
+[params]
+  mainSections = ["marketing", "technology","martech","opinion"]
+ [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true 
