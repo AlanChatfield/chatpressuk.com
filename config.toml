@@ -1,6 +1,6 @@
-baseurl = "https://www.chatpressuk.com/"
+baseurl = "https://www.chatpress.co.uk/"
 languageCode = "en-gb"
-title = "ChatPress UK"
+title = "The ChatPress"
 description = "Random thoughts about sport, politics and global affairs"
 preserveTaxonomyNames = true
 disableKinds = ["taxonomyTerm"]
@@ -10,7 +10,7 @@ disableKinds = ["taxonomyTerm"]
   post = "/:slug/"
   tags = "/tag/:slug/"
 [params]
-  mainSections = ["marketing", "technology","martech","opinion"]
+  mainSections = ["politics", "sport"]
  [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
