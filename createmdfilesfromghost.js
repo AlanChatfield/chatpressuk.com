@@ -53,7 +53,7 @@ const createMdFilesFromGhost = async () => {
             frontmatter.og_image = ogImage;
 
             if (post.tags && post.tags.length) {
-                frontmatter.tags = post.tags.map(t => t.name);
+                frontmatter.tags = post.tags.filter(t => t.name != '#chatpress').map(t => t.name);
             }
 
             // If there's a canonical url, please add it.
