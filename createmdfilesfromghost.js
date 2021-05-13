@@ -21,6 +21,7 @@ const createMdFilesFromGhost = async () => {
             filter: 'tag:[politics,sport,hash-chatpress]',
             include: 'tags,authors',
             formats: ['html'],
+            order: 'published_at DESC'
         });
 
         await Promise.all(posts.map(async (post) => {
