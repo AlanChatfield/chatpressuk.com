@@ -1,5 +1,5 @@
 {
-	"name": "Alan Chatfield : Marketing via Technology",
+	"name": "The ChatPress",
 	"icons": [
 		{
 			"src": "\/img\/android-chrome-192x192.png",
@@ -12,7 +12,7 @@
 			"type": "image\/png"
 		}
 	],
-	"background_color": "#109954",	
-	"theme_color": "#109954",
+	"background_color": "00578A",	
+	"theme_color": "00578A",
 	"display": "browser"
 }
