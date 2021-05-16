@@ -10,4 +10,4 @@
 /blog/*  /:splat  301
 /opinion/*  /:splat  301
 /subscribe  https://www.alanchatfield.net/subscribe/  301
-/content/images/*  https://www.alanchatfield.net/content/images/:splat  302
+/content/images/*  https://alanchatfield.ghost.io/content/images/:splat  302
