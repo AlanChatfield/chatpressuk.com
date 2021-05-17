@@ -4,7 +4,7 @@
 
 <main class="container">
       {{ $paginator := .Paginate (where .Site.RegularPages "Section" "post") 10 }}
-      {{ range $paginator }}
+      {{ range $paginator.RegularPages }}
             {{ .Render "li"}}
       {{ end }}
   {{ partial "pagination" . }}
