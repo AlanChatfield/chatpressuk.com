@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ partial "banner" (dict "imageUrl" .Params.image "title" "Welcome to the ChatPress" "subtitle" .Params.Description "bannerStyle" .Params.banner) }}
+{{ partial "banner" (dict "imageUrl" .Params.image "title" "Welcome to the ChatPress" "subtitle" "Random thoughts about sport, politics and global affairs" "bannerStyle" .Params.banner) }}
 
 <main class="container">
       {{ $paginator := .Paginate (where .Site.RegularPages "Section" "post") 10 }}
