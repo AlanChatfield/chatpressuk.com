@@ -3,7 +3,8 @@
 {{ partial "banner" (dict "imageUrl" .Params.image "title" "Welcome to the ChatPress" "subtitle" .Params.Description "bannerStyle" .Params.banner) }}
 
 <main class="container">
-      {{ range where .Site.RegularPages "Section" "post" }}
+      {{ $paginator := .Paginate (where .Site.RegularPages "Section" "post") 10 }}
+      {{ range $paginator }}
             {{ .Render "li"}}
       {{ end }}
   {{ partial "pagination" . }}
