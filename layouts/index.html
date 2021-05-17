@@ -3,7 +3,7 @@
 {{ partial "banner" (dict "imageUrl" .Params.image "title" "Welcome to the ChatPress" "subtitle" .Params.Description "bannerStyle" .Params.banner) }}
 
 <main class="container">
-      {{ range where .Site.Pages "Section" "post" }}
+      {{ range where .Data.Pages "Section" "post" }}
             {{ .Render "li"}}
       {{ end }}
   {{ partial "pagination" . }}
