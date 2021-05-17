@@ -7,7 +7,8 @@
 /sport/		/tag/sport/	301
 /rss/	/blog/index.xml	301
 /blog/  /  301
-/blog/*  /:splat  301
+/blog/page/*  /page/:splat  301
+/index.xml  /blog/index.xml  301
 /opinion/*  /:splat  301
 /subscribe  https://www.alanchatfield.net/subscribe/  301
 /content/images/*  https://alanchatfield.ghost.io/content/images/:splat  200!
