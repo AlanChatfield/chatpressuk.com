@@ -1,6 +1,5 @@
 <head>
-
-	<title>{{ if .IsHome }}{{ .Title }} - A Current Affairs Blog{{ else}}{{ .Title }} - The ChatPress{{ end }}</title>
+	<title>{{ if eq .Kind "home" }}The ChatPress - A Current Affairs Blog{{ else }}{{ .Title }} - The ChatPressd</title>{{ end }}</title>
 	<meta name="description" content="{{ if .Params.excerpt }}{{ .Params.excerpt }}{{ else if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.SiteDescription }}{{ end }}" />
 
 	<meta charset="utf-8">
@@ -13,7 +12,7 @@
 	{{ end }}	
 	
 	<!-- Favicons -->
-    	<link rel="alternate" type="application/rss+xml" title="Alan Chatfield" href="/blog/index.xml" />
+    	<link rel="alternate" type="application/rss+xml" title="The ChatPress" href="/blog/index.xml" />
 	{{if eq .Section "post"}}{{ with .OutputFormats.Get "amp" }}
 	<link rel="amphtml" href="{{ .Permalink }}" />   
 	{{ end }}{{ end }}		
