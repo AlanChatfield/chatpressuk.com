@@ -1,5 +1,5 @@
 <head>
-	<title>{{ if eq .Kind "home" }}The ChatPress - A Current Affairs Blog{{ else }}{{ .Title }} - The ChatPressd</title>{{ end }}</title>
+	<title>{{ if eq .Kind "home" }}The ChatPress - A Current Affairs Blog{{ else }}{{ .Title }} - The ChatPress{{ end }}</title>
 	<meta name="description" content="{{ if .Params.excerpt }}{{ .Params.excerpt }}{{ else if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.SiteDescription }}{{ end }}" />
 
 	<meta charset="utf-8">
