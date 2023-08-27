@@ -82,7 +82,7 @@ const createMdFilesFromGhost = async () => {
         // Fetch pages from the Ghost Content API
         const pages = await api.pages.browse({
             limit: 'all',
-            filter: 'slug:privacy-policy',
+            filter: 'slug:privacy',
             formats: ['html'],
         });
 
